@@ -1,0 +1,65 @@
+module verticalModifier(
+    input i_clk,
+    input[19:0] i_vdat_colour,
+    input[3:0] i_fvht,
+    output[19:0] o_updated_colour
+);
+
+    logic incrementer_full;
+	
+	 logic[9:0] incrementer;
+    logic modify_period;
+    logic[9:0] modified_colour;
+	 logic vertical_blank;
+	 logic horizontal_blank;
+	 logic startBar;
+
+    assign vertical_blank = i_fvht[2]; 
+    assign horizontal_blank = i_fvht[1];
+	
+	 initial begin
+		incrementer = 'b0;
+	 end
+    
+    downCounterEnabler #(8) downCounterEnabler(
+        .clk(horizontal_blank),
+        .enable(startBar),
+        .n_reset(~vertical_blank),
+        .modifyPeriod(modify_period)
+    );
+
+    mux2 #(10) selectOutdata (
+        .i_select(modify_period),
+		  .i_input0(i_vdat_colour[9:0]),
+		  .i_input1(modified_colour),
+        .o_output(o_updated_colour[9:0])
+    );
+
+    compliment2 colourInverter(
+        .i(i_vdat_colour[9:0]),
+        .o(modified_colour)
+    );
+	 
+	 downCounterSetStart #(12) delayer(
+		.clk(horizontal_blank),
+		.enable(1),
+		.n_reset(incrementer_full),
+		.start(incrementer),
+		.startBar(startBar)
+    );
+	 
+	 assign o_updated_colour[19:10] = i_vdat_colour[19:10];
+
+     always_comb begin
+        incrementer_full = (incrementer == 10'b1111111111);
+     end
+	 
+	 always_ff @(posedge vertical_blank) begin
+		if(incrementer == 10b'1111111111) begin
+			incrementer <= 'b0;
+		end else begin
+			incrementer <= incrementer + 1;
+		end
+	 end
+    
+endmodule

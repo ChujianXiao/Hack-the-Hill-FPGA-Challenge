@@ -1,0 +1,7 @@
+module compliment2(
+    input logic [9:0] i, 
+    output logic [9:0] o
+);
+
+    assign o = ~i + 10'b1; 
+endmodule

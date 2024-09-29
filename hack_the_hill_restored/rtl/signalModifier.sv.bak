@@ -1,0 +1,35 @@
+module signalModifier(
+    input i_clk,
+    input i_vdat_colour[19:0],
+    input i_fvht[3:0],
+    output o_updated_colour[19:0]
+);
+
+    logic modify_period;
+    logic[9:0] modified_colour;
+	 logic vertical_blank;
+	 logic horizontal_blank;
+
+    assign vertical_blank = i_fvht[2]; 
+    assign horizontal_blank = i_fvht[1]; 
+    
+    downCounterEnabler downCounter(
+        .clk(i_clk),
+        .enable(1),
+        .n_reset(horizontal_blank),
+        .modifyPeriod(modify_period)
+    );
+
+    mux2 #(10) selectOutdata (
+        .i_select(modify_period & ~vertical_blank),
+        .i_input0(i_vdat_colour[9:0]),
+        .i_input1(modified_colour),
+        .o_output(o_updated_colour[9:0])
+    );
+
+    compliment2 colourInterver(
+        i.(i_vdat_colour[9:0]),
+        o.(modified_colour)
+    );
+    
+endmodule

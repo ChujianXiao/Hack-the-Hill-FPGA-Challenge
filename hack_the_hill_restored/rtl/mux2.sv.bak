@@ -1,0 +1,14 @@
+module multiplexer2 #(parameter N=3) (
+    input[1:0] i_select,
+    input[N-1] i_input1,
+    input[N-1] i_input0,
+    output[N-1] o_output
+);
+
+always_comb
+    case(i_select)
+        0: o_output = i_input0;
+        1: o_output = i_input1;
+    endcase
+
+endmodule
