@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Sun Sep 29 10:19:58 2024
+Analysis & Synthesis Status : Successful - Sun Sep 29 11:06:59 2024
 Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Standard Edition
 Revision Name : hack_the_hill
 Top-level Entity Name : hack_the_hill
 Family : Arria V GZ
 Logic utilization (in ALMs) : N/A
-Total registers : 4902
+Total registers : 4938
 Total pins : 86
 Total virtual pins : 4
-Total block memory bits : 712,704
+Total block memory bits : 745,472
 Total DSP Blocks : 0
 Total HSSI STD RX PCSs : 0
 Total HSSI 10G RX PCSs : 0

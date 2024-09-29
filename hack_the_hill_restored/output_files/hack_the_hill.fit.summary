@@ -1,16 +1,16 @@
-Fitter Status : Successful - Sun Sep 29 10:22:32 2024
+Fitter Status : Successful - Sun Sep 29 11:09:24 2024
 Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Standard Edition
 Revision Name : hack_the_hill
 Top-level Entity Name : hack_the_hill
 Family : Arria V GZ
 Device : 5AGZME3H2F35C3
 Timing Models : Final
-Logic utilization (in ALMs) : 2,426 / 135,840 ( 2 % )
-Total registers : 5283
+Logic utilization (in ALMs) : 2,420 / 135,840 ( 2 % )
+Total registers : 5336
 Total pins : 92 / 526 ( 17 % )
 Total virtual pins : 4
-Total block memory bits : 712,704 / 19,599,360 ( 4 % )
-Total RAM Blocks : 44 / 957 ( 5 % )
+Total block memory bits : 745,472 / 19,599,360 ( 4 % )
+Total RAM Blocks : 46 / 957 ( 5 % )
 Total DSP Blocks : 0 / 1,044 ( 0 % )
 Total HSSI STD RX PCSs : 0 / 24 ( 0 % )
 Total HSSI 10G RX PCSs : 0 / 24 ( 0 % )

@@ -1,5 +1,5 @@
 Timing Analyzer report for hack_the_hill
-Sun Sep 29 10:22:54 2024
+Sun Sep 29 11:09:47 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Standard Edition
 
 
@@ -96,15 +96,15 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
-; Average used               ; 1.58        ;
+; Average used               ; 1.59        ;
 ; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   6.4%      ;
-;     Processor 3            ;   5.9%      ;
-;     Processor 4            ;   5.2%      ;
-;     Processor 5            ;   3.4%      ;
+;     Processor 3            ;   6.1%      ;
+;     Processor 4            ;   5.3%      ;
+;     Processor 5            ;   3.5%      ;
 ;     Processor 6            ;   3.4%      ;
 ;     Processor 7            ;   3.4%      ;
 ;     Processor 8            ;   3.4%      ;
@@ -115,7 +115,7 @@ https://fpgasoftware.intel.com/eula.
 ;     Processor 13           ;   3.4%      ;
 ;     Processor 14           ;   3.4%      ;
 ;     Processor 15           ;   3.4%      ;
-;     Processor 16           ;   3.4%      ;
+;     Processor 16           ;   3.3%      ;
 +----------------------------+-------------+
 
 
@@ -124,8 +124,8 @@ https://fpgasoftware.intel.com/eula.
 +---------------+--------+--------------------------+
 ; SDC File Path ; Status ; Read at                  ;
 +---------------+--------+--------------------------+
-; fpga_top.sdc  ; OK     ; Sun Sep 29 10:22:50 2024 ;
-; fpga_bot.sdc  ; OK     ; Sun Sep 29 10:22:50 2024 ;
+; fpga_top.sdc  ; OK     ; Sun Sep 29 11:09:43 2024 ;
+; fpga_bot.sdc  ; OK     ; Sun Sep 29 11:09:43 2024 ;
 +---------------+--------+--------------------------+
 
 
@@ -154,19 +154,19 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+---------+-------------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Slow 850mV 85C Model Fmax Summary                                                                                                                                                                                                                                                        ;
-+------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------+
-; Fmax       ; Restricted Fmax ; Clock Name                                                                                                                                                                                               ; Note                                           ;
-+------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------+
-; 42.19 MHz  ; 42.19 MHz       ; altera_reserved_tck                                                                                                                                                                                      ;                                                ;
-; 273.9 MHz  ; 273.9 MHz       ; memrefclk_i                                                                                                                                                                                              ;                                                ;
-; 338.75 MHz ; 338.75 MHz      ; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ;                                                ;
-; 346.86 MHz ; 346.86 MHz      ; sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1] ;                                                ;
-; 361.4 MHz  ; 361.4 MHz       ; clk_lvds_i                                                                                                                                                                                               ;                                                ;
-; 772.2 MHz  ; 650.2 MHz       ; clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; limit due to minimum period restriction (tmin) ;
-; 1098.9 MHz ; 650.2 MHz       ; gclk0_148m50_i                                                                                                                                                                                           ; limit due to minimum period restriction (tmin) ;
-+------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 850mV 85C Model Fmax Summary                                                                                                                                                                                                                                                         ;
++-------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------+
+; Fmax        ; Restricted Fmax ; Clock Name                                                                                                                                                                                               ; Note                                           ;
++-------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------+
+; 39.63 MHz   ; 39.63 MHz       ; altera_reserved_tck                                                                                                                                                                                      ;                                                ;
+; 237.59 MHz  ; 237.59 MHz      ; memrefclk_i                                                                                                                                                                                              ;                                                ;
+; 353.73 MHz  ; 353.73 MHz      ; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ;                                                ;
+; 354.61 MHz  ; 354.61 MHz      ; sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1] ;                                                ;
+; 366.84 MHz  ; 366.84 MHz      ; clk_lvds_i                                                                                                                                                                                               ;                                                ;
+; 868.06 MHz  ; 650.2 MHz       ; clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; limit due to minimum period restriction (tmin) ;
+; 1086.96 MHz ; 650.2 MHz       ; gclk0_148m50_i                                                                                                                                                                                           ; limit due to minimum period restriction (tmin) ;
++-------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
@@ -181,14 +181,14 @@ HTML report is unavailable in plain text report export.
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                                                                                                                                    ; Slack  ; End Point TNS ;
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+---------------+
-; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; 0.381  ; 0.000         ;
-; sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1] ; 0.484  ; 0.000         ;
-; clk_lvds_i                                                                                                                                                                                               ; 3.967  ; 0.000         ;
-; memrefclk_i                                                                                                                                                                                              ; 4.349  ; 0.000         ;
-; gclk0_148m50_i                                                                                                                                                                                           ; 5.824  ; 0.000         ;
-; clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; 6.705  ; 0.000         ;
-; n/a                                                                                                                                                                                                      ; 13.738 ; 0.000         ;
-; altera_reserved_tck                                                                                                                                                                                      ; 38.149 ; 0.000         ;
+; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; 0.506  ; 0.000         ;
+; sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1] ; 0.547  ; 0.000         ;
+; memrefclk_i                                                                                                                                                                                              ; 3.791  ; 0.000         ;
+; clk_lvds_i                                                                                                                                                                                               ; 4.008  ; 0.000         ;
+; gclk0_148m50_i                                                                                                                                                                                           ; 5.814  ; 0.000         ;
+; clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; 6.848  ; 0.000         ;
+; n/a                                                                                                                                                                                                      ; 13.548 ; 0.000         ;
+; altera_reserved_tck                                                                                                                                                                                      ; 37.382 ; 0.000         ;
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -197,14 +197,14 @@ HTML report is unavailable in plain text report export.
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                                                                                                                                    ; Slack  ; End Point TNS ;
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+---------------+
-; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; 0.099  ; 0.000         ;
-; altera_reserved_tck                                                                                                                                                                                      ; 0.105  ; 0.000         ;
-; clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; 0.138  ; 0.000         ;
-; sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1] ; 0.151  ; 0.000         ;
-; clk_lvds_i                                                                                                                                                                                               ; 0.154  ; 0.000         ;
-; memrefclk_i                                                                                                                                                                                              ; 0.206  ; 0.000         ;
-; gclk0_148m50_i                                                                                                                                                                                           ; 0.283  ; 0.000         ;
-; n/a                                                                                                                                                                                                      ; 15.441 ; 0.000         ;
+; altera_reserved_tck                                                                                                                                                                                      ; 0.067  ; 0.000         ;
+; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; 0.113  ; 0.000         ;
+; clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; 0.148  ; 0.000         ;
+; clk_lvds_i                                                                                                                                                                                               ; 0.153  ; 0.000         ;
+; sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1] ; 0.155  ; 0.000         ;
+; memrefclk_i                                                                                                                                                                                              ; 0.204  ; 0.000         ;
+; gclk0_148m50_i                                                                                                                                                                                           ; 0.250  ; 0.000         ;
+; n/a                                                                                                                                                                                                      ; 15.639 ; 0.000         ;
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -213,10 +213,10 @@ HTML report is unavailable in plain text report export.
 +-------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                   ; Slack  ; End Point TNS ;
 +-------------------------------------------------------------------------+--------+---------------+
-; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 1.331  ; 0.000         ;
-; clk_lvds_i                                                              ; 4.811  ; 0.000         ;
-; clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk ; 7.026  ; 0.000         ;
-; altera_reserved_tck                                                     ; 95.391 ; 0.000         ;
+; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 1.679  ; 0.000         ;
+; clk_lvds_i                                                              ; 4.918  ; 0.000         ;
+; clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk ; 7.142  ; 0.000         ;
+; altera_reserved_tck                                                     ; 95.522 ; 0.000         ;
 +-------------------------------------------------------------------------+--------+---------------+
 
 
@@ -225,10 +225,10 @@ HTML report is unavailable in plain text report export.
 +-------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                   ; Slack ; End Point TNS ;
 +-------------------------------------------------------------------------+-------+---------------+
-; clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.253 ; 0.000         ;
-; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.521 ; 0.000         ;
-; clk_lvds_i                                                              ; 0.561 ; 0.000         ;
-; altera_reserved_tck                                                     ; 0.649 ; 0.000         ;
+; clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.255 ; 0.000         ;
+; altera_reserved_tck                                                     ; 0.264 ; 0.000         ;
+; clk_lvds_i                                                              ; 0.282 ; 0.000         ;
+; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.483 ; 0.000         ;
 +-------------------------------------------------------------------------+-------+---------------+
 
 
@@ -241,12 +241,12 @@ HTML report is unavailable in plain text report export.
 ; clk125_pll|pll_0|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]                                                                                                                                    ; 0.333  ; 0.000         ;
 ; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; 0.833  ; 0.000         ;
 ; sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1] ; 0.867  ; 0.000         ;
-; clk_lvds_i                                                                                                                                                                                               ; 2.860  ; 0.000         ;
-; gclk0_148m50_i                                                                                                                                                                                           ; 2.876  ; 0.000         ;
+; clk_lvds_i                                                                                                                                                                                               ; 2.865  ; 0.000         ;
+; gclk0_148m50_i                                                                                                                                                                                           ; 2.877  ; 0.000         ;
 ; egress_refclk_0                                                                                                                                                                                          ; 3.367  ; 0.000         ;
-; clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; 3.454  ; 0.000         ;
-; memrefclk_i                                                                                                                                                                                              ; 3.503  ; 0.000         ;
-; altera_reserved_tck                                                                                                                                                                                      ; 49.121 ; 0.000         ;
+; clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; 3.455  ; 0.000         ;
+; memrefclk_i                                                                                                                                                                                              ; 3.504  ; 0.000         ;
+; altera_reserved_tck                                                                                                                                                                                      ; 49.137 ; 0.000         ;
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -254,10 +254,10 @@ HTML report is unavailable in plain text report export.
 ; Slow 850mV 85C Model Metastability Summary ;
 ----------------------------------------------
 The design MTBF is not calculated because there are no specified synchronizers in the design.
-Number of Synchronizer Chains Found: 83
+Number of Synchronizer Chains Found: 73
 Shortest Synchronizer Chain: 2 Registers
 Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-Worst Case Available Settling Time: 3.012 ns
+Worst Case Available Settling Time: 3.222 ns
 
 
 
@@ -267,13 +267,13 @@ Worst Case Available Settling Time: 3.012 ns
 +-------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------+
 ; Fmax        ; Restricted Fmax ; Clock Name                                                                                                                                                                                               ; Note                                           ;
 +-------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------+
-; 42.63 MHz   ; 42.63 MHz       ; altera_reserved_tck                                                                                                                                                                                      ;                                                ;
-; 295.95 MHz  ; 295.95 MHz      ; memrefclk_i                                                                                                                                                                                              ;                                                ;
-; 357.02 MHz  ; 357.02 MHz      ; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ;                                                ;
-; 376.93 MHz  ; 376.93 MHz      ; clk_lvds_i                                                                                                                                                                                               ;                                                ;
-; 383.88 MHz  ; 383.88 MHz      ; sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1] ;                                                ;
-; 801.92 MHz  ; 650.2 MHz       ; clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; limit due to minimum period restriction (tmin) ;
-; 1144.16 MHz ; 650.2 MHz       ; gclk0_148m50_i                                                                                                                                                                                           ; limit due to minimum period restriction (tmin) ;
+; 40.28 MHz   ; 40.28 MHz       ; altera_reserved_tck                                                                                                                                                                                      ;                                                ;
+; 260.08 MHz  ; 260.08 MHz      ; memrefclk_i                                                                                                                                                                                              ;                                                ;
+; 372.44 MHz  ; 372.44 MHz      ; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ;                                                ;
+; 379.65 MHz  ; 379.65 MHz      ; clk_lvds_i                                                                                                                                                                                               ;                                                ;
+; 387.15 MHz  ; 387.15 MHz      ; sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1] ;                                                ;
+; 911.58 MHz  ; 650.2 MHz       ; clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; limit due to minimum period restriction (tmin) ;
+; 1128.67 MHz ; 650.2 MHz       ; gclk0_148m50_i                                                                                                                                                                                           ; limit due to minimum period restriction (tmin) ;
 +-------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -283,14 +283,14 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                                                                                                                                    ; Slack  ; End Point TNS ;
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+---------------+
-; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; 0.532  ; 0.000         ;
-; sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1] ; 0.762  ; 0.000         ;
-; clk_lvds_i                                                                                                                                                                                               ; 4.081  ; 0.000         ;
-; memrefclk_i                                                                                                                                                                                              ; 4.621  ; 0.000         ;
-; gclk0_148m50_i                                                                                                                                                                                           ; 5.860  ; 0.000         ;
-; clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; 6.753  ; 0.000         ;
-; n/a                                                                                                                                                                                                      ; 13.739 ; 0.000         ;
-; altera_reserved_tck                                                                                                                                                                                      ; 38.270 ; 0.000         ;
+; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; 0.648  ; 0.000         ;
+; sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1] ; 0.784  ; 0.000         ;
+; clk_lvds_i                                                                                                                                                                                               ; 4.100  ; 0.000         ;
+; memrefclk_i                                                                                                                                                                                              ; 4.155  ; 0.000         ;
+; gclk0_148m50_i                                                                                                                                                                                           ; 5.848  ; 0.000         ;
+; clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; 6.903  ; 0.000         ;
+; n/a                                                                                                                                                                                                      ; 13.549 ; 0.000         ;
+; altera_reserved_tck                                                                                                                                                                                      ; 37.587 ; 0.000         ;
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -299,14 +299,14 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                                                                                                                                    ; Slack  ; End Point TNS ;
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+---------------+
-; altera_reserved_tck                                                                                                                                                                                      ; 0.118  ; 0.000         ;
-; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; 0.162  ; 0.000         ;
-; sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1] ; 0.169  ; 0.000         ;
-; clk_lvds_i                                                                                                                                                                                               ; 0.216  ; 0.000         ;
+; altera_reserved_tck                                                                                                                                                                                      ; 0.085  ; 0.000         ;
+; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; 0.155  ; 0.000         ;
+; sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1] ; 0.171  ; 0.000         ;
 ; clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; 0.218  ; 0.000         ;
-; memrefclk_i                                                                                                                                                                                              ; 0.262  ; 0.000         ;
-; gclk0_148m50_i                                                                                                                                                                                           ; 0.386  ; 0.000         ;
-; n/a                                                                                                                                                                                                      ; 15.475 ; 0.000         ;
+; clk_lvds_i                                                                                                                                                                                               ; 0.233  ; 0.000         ;
+; memrefclk_i                                                                                                                                                                                              ; 0.261  ; 0.000         ;
+; gclk0_148m50_i                                                                                                                                                                                           ; 0.319  ; 0.000         ;
+; n/a                                                                                                                                                                                                      ; 15.664 ; 0.000         ;
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -315,10 +315,10 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                   ; Slack  ; End Point TNS ;
 +-------------------------------------------------------------------------+--------+---------------+
-; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 1.503  ; 0.000         ;
-; clk_lvds_i                                                              ; 4.919  ; 0.000         ;
-; clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk ; 7.184  ; 0.000         ;
-; altera_reserved_tck                                                     ; 95.603 ; 0.000         ;
+; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 1.805  ; 0.000         ;
+; clk_lvds_i                                                              ; 5.040  ; 0.000         ;
+; clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk ; 7.269  ; 0.000         ;
+; altera_reserved_tck                                                     ; 95.799 ; 0.000         ;
 +-------------------------------------------------------------------------+--------+---------------+
 
 
@@ -327,10 +327,10 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                   ; Slack ; End Point TNS ;
 +-------------------------------------------------------------------------+-------+---------------+
-; clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.310 ; 0.000         ;
-; clk_lvds_i                                                              ; 0.603 ; 0.000         ;
-; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.611 ; 0.000         ;
-; altera_reserved_tck                                                     ; 0.653 ; 0.000         ;
+; clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.305 ; 0.000         ;
+; altera_reserved_tck                                                     ; 0.330 ; 0.000         ;
+; clk_lvds_i                                                              ; 0.332 ; 0.000         ;
+; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.528 ; 0.000         ;
 +-------------------------------------------------------------------------+-------+---------------+
 
 
@@ -343,12 +343,12 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; clk125_pll|pll_0|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]                                                                                                                                    ; 0.333  ; 0.000         ;
 ; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; 0.833  ; 0.000         ;
 ; sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1] ; 0.844  ; 0.000         ;
-; clk_lvds_i                                                                                                                                                                                               ; 2.862  ; 0.000         ;
-; gclk0_148m50_i                                                                                                                                                                                           ; 2.873  ; 0.000         ;
+; clk_lvds_i                                                                                                                                                                                               ; 2.864  ; 0.000         ;
+; gclk0_148m50_i                                                                                                                                                                                           ; 2.874  ; 0.000         ;
 ; egress_refclk_0                                                                                                                                                                                          ; 3.367  ; 0.000         ;
 ; clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; 3.448  ; 0.000         ;
-; memrefclk_i                                                                                                                                                                                              ; 3.500  ; 0.000         ;
-; altera_reserved_tck                                                                                                                                                                                      ; 49.287 ; 0.000         ;
+; memrefclk_i                                                                                                                                                                                              ; 3.502  ; 0.000         ;
+; altera_reserved_tck                                                                                                                                                                                      ; 49.293 ; 0.000         ;
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -356,10 +356,10 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; Slow 850mV 0C Model Metastability Summary ;
 ---------------------------------------------
 The design MTBF is not calculated because there are no specified synchronizers in the design.
-Number of Synchronizer Chains Found: 83
+Number of Synchronizer Chains Found: 73
 Shortest Synchronizer Chain: 2 Registers
 Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-Worst Case Available Settling Time: 3.300 ns
+Worst Case Available Settling Time: 3.496 ns
 
 
 
@@ -369,14 +369,14 @@ Worst Case Available Settling Time: 3.300 ns
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                                                                                                                                    ; Slack  ; End Point TNS ;
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+---------------+
-; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; 1.718  ; 0.000         ;
-; sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1] ; 1.867  ; 0.000         ;
-; clk_lvds_i                                                                                                                                                                                               ; 5.347  ; 0.000         ;
-; memrefclk_i                                                                                                                                                                                              ; 5.939  ; 0.000         ;
-; gclk0_148m50_i                                                                                                                                                                                           ; 6.372  ; 0.000         ;
-; clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; 7.499  ; 0.000         ;
-; n/a                                                                                                                                                                                                      ; 15.972 ; 0.000         ;
-; altera_reserved_tck                                                                                                                                                                                      ; 40.828 ; 0.000         ;
+; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; 1.749  ; 0.000         ;
+; sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1] ; 1.862  ; 0.000         ;
+; clk_lvds_i                                                                                                                                                                                               ; 5.499  ; 0.000         ;
+; memrefclk_i                                                                                                                                                                                              ; 5.664  ; 0.000         ;
+; gclk0_148m50_i                                                                                                                                                                                           ; 6.374  ; 0.000         ;
+; clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; 7.569  ; 0.000         ;
+; n/a                                                                                                                                                                                                      ; 15.847 ; 0.000         ;
+; altera_reserved_tck                                                                                                                                                                                      ; 40.388 ; 0.000         ;
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -385,14 +385,14 @@ Worst Case Available Settling Time: 3.300 ns
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                                                                                                                                    ; Slack  ; End Point TNS ;
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+---------------+
-; altera_reserved_tck                                                                                                                                                                                      ; 0.033  ; 0.000         ;
-; sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1] ; 0.079  ; 0.000         ;
-; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; 0.121  ; 0.000         ;
-; clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; 0.123  ; 0.000         ;
+; altera_reserved_tck                                                                                                                                                                                      ; 0.008  ; 0.000         ;
+; sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1] ; 0.077  ; 0.000         ;
+; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; 0.115  ; 0.000         ;
 ; clk_lvds_i                                                                                                                                                                                               ; 0.125  ; 0.000         ;
 ; memrefclk_i                                                                                                                                                                                              ; 0.132  ; 0.000         ;
-; gclk0_148m50_i                                                                                                                                                                                           ; 0.192  ; 0.000         ;
-; n/a                                                                                                                                                                                                      ; 13.552 ; 0.000         ;
+; clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; 0.142  ; 0.000         ;
+; gclk0_148m50_i                                                                                                                                                                                           ; 0.193  ; 0.000         ;
+; n/a                                                                                                                                                                                                      ; 13.649 ; 0.000         ;
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -401,10 +401,10 @@ Worst Case Available Settling Time: 3.300 ns
 +-------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                   ; Slack  ; End Point TNS ;
 +-------------------------------------------------------------------------+--------+---------------+
-; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 2.208  ; 0.000         ;
-; clk_lvds_i                                                              ; 5.843  ; 0.000         ;
-; clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk ; 7.624  ; 0.000         ;
-; altera_reserved_tck                                                     ; 97.190 ; 0.000         ;
+; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 2.417  ; 0.000         ;
+; clk_lvds_i                                                              ; 5.991  ; 0.000         ;
+; clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk ; 7.625  ; 0.000         ;
+; altera_reserved_tck                                                     ; 97.249 ; 0.000         ;
 +-------------------------------------------------------------------------+--------+---------------+
 
 
@@ -413,10 +413,10 @@ Worst Case Available Settling Time: 3.300 ns
 +-------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                   ; Slack ; End Point TNS ;
 +-------------------------------------------------------------------------+-------+---------------+
-; clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.183 ; 0.000         ;
-; altera_reserved_tck                                                     ; 0.339 ; 0.000         ;
-; clk_lvds_i                                                              ; 0.364 ; 0.000         ;
-; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.369 ; 0.000         ;
+; clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.186 ; 0.000         ;
+; clk_lvds_i                                                              ; 0.202 ; 0.000         ;
+; altera_reserved_tck                                                     ; 0.210 ; 0.000         ;
+; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.326 ; 0.000         ;
 +-------------------------------------------------------------------------+-------+---------------+
 
 
@@ -427,14 +427,14 @@ Worst Case Available Settling Time: 3.300 ns
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+---------------+
 ; sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_plls.gen_tx_plls.tx_plls|pll[0].pll.atx_pll.tx_pll|clk010g                                                           ; 0.084  ; 0.000         ;
 ; clk125_pll|pll_0|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]                                                                                                                                    ; 0.333  ; 0.000         ;
-; sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1] ; 0.904  ; 0.000         ;
+; sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1] ; 0.905  ; 0.000         ;
 ; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; 0.935  ; 0.000         ;
-; clk_lvds_i                                                                                                                                                                                               ; 3.092  ; 0.000         ;
+; clk_lvds_i                                                                                                                                                                                               ; 3.097  ; 0.000         ;
 ; gclk0_148m50_i                                                                                                                                                                                           ; 3.100  ; 0.000         ;
 ; egress_refclk_0                                                                                                                                                                                          ; 3.367  ; 0.000         ;
-; memrefclk_i                                                                                                                                                                                              ; 3.728  ; 0.000         ;
-; clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; 3.741  ; 0.000         ;
-; altera_reserved_tck                                                                                                                                                                                      ; 48.935 ; 0.000         ;
+; memrefclk_i                                                                                                                                                                                              ; 3.725  ; 0.000         ;
+; clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; 3.740  ; 0.000         ;
+; altera_reserved_tck                                                                                                                                                                                      ; 48.955 ; 0.000         ;
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -442,10 +442,10 @@ Worst Case Available Settling Time: 3.300 ns
 ; Fast 850mV 0C Model Metastability Summary ;
 ---------------------------------------------
 The design MTBF is not calculated because there are no specified synchronizers in the design.
-Number of Synchronizer Chains Found: 83
+Number of Synchronizer Chains Found: 73
 Shortest Synchronizer Chain: 2 Registers
 Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-Worst Case Available Settling Time: 4.662 ns
+Worst Case Available Settling Time: 4.895 ns
 
 
 
@@ -455,17 +455,17 @@ Worst Case Available Settling Time: 4.662 ns
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+--------+----------+---------+---------------------+
 ; Clock                                                                                                                                                                                                     ; Setup  ; Hold   ; Recovery ; Removal ; Minimum Pulse Width ;
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+--------+----------+---------+---------------------+
-; Worst-case Slack                                                                                                                                                                                          ; 0.381  ; 0.033  ; 1.331    ; 0.183   ; 0.084               ;
-;  altera_reserved_tck                                                                                                                                                                                      ; 38.149 ; 0.033  ; 95.391   ; 0.339   ; 48.935              ;
+; Worst-case Slack                                                                                                                                                                                          ; 0.506  ; 0.008  ; 1.679    ; 0.186   ; 0.084               ;
+;  altera_reserved_tck                                                                                                                                                                                      ; 37.382 ; 0.008  ; 95.522   ; 0.210   ; 48.955              ;
 ;  clk125_pll|pll_0|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]                                                                                                                                    ; N/A    ; N/A    ; N/A      ; N/A     ; 0.333               ;
-;  clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; 0.381  ; 0.099  ; 1.331    ; 0.369   ; 0.833               ;
-;  clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; 6.705  ; 0.123  ; 7.026    ; 0.183   ; 3.448               ;
-;  clk_lvds_i                                                                                                                                                                                               ; 3.967  ; 0.125  ; 4.811    ; 0.364   ; 2.860               ;
+;  clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; 0.506  ; 0.113  ; 1.679    ; 0.326   ; 0.833               ;
+;  clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; 6.848  ; 0.142  ; 7.142    ; 0.186   ; 3.448               ;
+;  clk_lvds_i                                                                                                                                                                                               ; 4.008  ; 0.125  ; 4.918    ; 0.202   ; 2.864               ;
 ;  egress_refclk_0                                                                                                                                                                                          ; N/A    ; N/A    ; N/A      ; N/A     ; 3.367               ;
-;  gclk0_148m50_i                                                                                                                                                                                           ; 5.824  ; 0.192  ; N/A      ; N/A     ; 2.873               ;
-;  memrefclk_i                                                                                                                                                                                              ; 4.349  ; 0.132  ; N/A      ; N/A     ; 3.500               ;
-;  n/a                                                                                                                                                                                                      ; 13.738 ; 13.552 ; N/A      ; N/A     ; N/A                 ;
-;  sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1] ; 0.484  ; 0.079  ; N/A      ; N/A     ; 0.844               ;
+;  gclk0_148m50_i                                                                                                                                                                                           ; 5.814  ; 0.193  ; N/A      ; N/A     ; 2.874               ;
+;  memrefclk_i                                                                                                                                                                                              ; 3.791  ; 0.132  ; N/A      ; N/A     ; 3.502               ;
+;  n/a                                                                                                                                                                                                      ; 13.548 ; 13.649 ; N/A      ; N/A     ; N/A                 ;
+;  sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1] ; 0.547  ; 0.077  ; N/A      ; N/A     ; 0.844               ;
 ;  sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_plls.gen_tx_plls.tx_plls|pll[0].pll.atx_pll.tx_pll|clk010g                                                           ; N/A    ; N/A    ; N/A      ; N/A     ; 0.084               ;
 ; Design-wide TNS                                                                                                                                                                                           ; 0.0    ; 0.0    ; 0.0      ; 0.0     ; 0.0                 ;
 ;  altera_reserved_tck                                                                                                                                                                                      ; 0.000  ; 0.000  ; 0.000    ; 0.000   ; 0.000               ;
@@ -853,20 +853,20 @@ Worst Case Available Settling Time: 4.662 ns
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------+----------+----------+----------+
 ; From Clock                                                                                                                                                                                               ; To Clock                                                                                                                                                                                                 ; RR Paths   ; FR Paths ; RF Paths ; FF Paths ;
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------+----------+----------+----------+
-; altera_reserved_tck                                                                                                                                                                                      ; altera_reserved_tck                                                                                                                                                                                      ; 20844      ; 2        ; 71       ; 0        ;
+; altera_reserved_tck                                                                                                                                                                                      ; altera_reserved_tck                                                                                                                                                                                      ; 21273      ; 2        ; 65       ; 0        ;
 ; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; altera_reserved_tck                                                                                                                                                                                      ; false path ; 0        ; 0        ; 0        ;
 ; altera_reserved_tck                                                                                                                                                                                      ; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; false path ; 0        ; 0        ; 0        ;
-; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; 26257      ; 0        ; 0        ; 0        ;
+; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; 26094      ; 0        ; 0        ; 0        ;
 ; clk_lvds_i                                                                                                                                                                                               ; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; false path ; 0        ; 0        ; 0        ;
 ; gclk0_148m50_i                                                                                                                                                                                           ; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; false path ; 0        ; 0        ; 0        ;
 ; sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1] ; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; false path ; 0        ; 0        ; 0        ;
 ; clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; 29         ; 0        ; 0        ; 0        ;
-; clk_lvds_i                                                                                                                                                                                               ; clk_lvds_i                                                                                                                                                                                               ; 2040       ; 0        ; 0        ; 0        ;
-; gclk0_148m50_i                                                                                                                                                                                           ; gclk0_148m50_i                                                                                                                                                                                           ; 4          ; 0        ; 0        ; 0        ;
-; memrefclk_i                                                                                                                                                                                              ; memrefclk_i                                                                                                                                                                                              ; 72         ; 0        ; 0        ; 0        ;
+; clk_lvds_i                                                                                                                                                                                               ; clk_lvds_i                                                                                                                                                                                               ; 2088       ; 0        ; 0        ; 0        ;
+; gclk0_148m50_i                                                                                                                                                                                           ; gclk0_148m50_i                                                                                                                                                                                           ; 3          ; 0        ; 0        ; 0        ;
+; memrefclk_i                                                                                                                                                                                              ; memrefclk_i                                                                                                                                                                                              ; 73         ; 0        ; 0        ; 0        ;
 ; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1] ; false path ; 0        ; 0        ; 0        ;
 ; clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1] ; false path ; 0        ; 0        ; 0        ;
-; sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1] ; sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1] ; 5845       ; 0        ; 0        ; 0        ;
+; sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1] ; sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1] ; 5714       ; 0        ; 0        ; 0        ;
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -876,20 +876,20 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------+----------+----------+----------+
 ; From Clock                                                                                                                                                                                               ; To Clock                                                                                                                                                                                                 ; RR Paths   ; FR Paths ; RF Paths ; FF Paths ;
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------+----------+----------+----------+
-; altera_reserved_tck                                                                                                                                                                                      ; altera_reserved_tck                                                                                                                                                                                      ; 20844      ; 2        ; 71       ; 0        ;
+; altera_reserved_tck                                                                                                                                                                                      ; altera_reserved_tck                                                                                                                                                                                      ; 21273      ; 2        ; 65       ; 0        ;
 ; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; altera_reserved_tck                                                                                                                                                                                      ; false path ; 0        ; 0        ; 0        ;
 ; altera_reserved_tck                                                                                                                                                                                      ; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; false path ; 0        ; 0        ; 0        ;
-; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; 26257      ; 0        ; 0        ; 0        ;
+; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; 26094      ; 0        ; 0        ; 0        ;
 ; clk_lvds_i                                                                                                                                                                                               ; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; false path ; 0        ; 0        ; 0        ;
 ; gclk0_148m50_i                                                                                                                                                                                           ; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; false path ; 0        ; 0        ; 0        ;
 ; sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1] ; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; false path ; 0        ; 0        ; 0        ;
 ; clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; 29         ; 0        ; 0        ; 0        ;
-; clk_lvds_i                                                                                                                                                                                               ; clk_lvds_i                                                                                                                                                                                               ; 2040       ; 0        ; 0        ; 0        ;
-; gclk0_148m50_i                                                                                                                                                                                           ; gclk0_148m50_i                                                                                                                                                                                           ; 4          ; 0        ; 0        ; 0        ;
-; memrefclk_i                                                                                                                                                                                              ; memrefclk_i                                                                                                                                                                                              ; 72         ; 0        ; 0        ; 0        ;
+; clk_lvds_i                                                                                                                                                                                               ; clk_lvds_i                                                                                                                                                                                               ; 2088       ; 0        ; 0        ; 0        ;
+; gclk0_148m50_i                                                                                                                                                                                           ; gclk0_148m50_i                                                                                                                                                                                           ; 3          ; 0        ; 0        ; 0        ;
+; memrefclk_i                                                                                                                                                                                              ; memrefclk_i                                                                                                                                                                                              ; 73         ; 0        ; 0        ; 0        ;
 ; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1] ; false path ; 0        ; 0        ; 0        ;
 ; clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1] ; false path ; 0        ; 0        ; 0        ;
-; sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1] ; sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1] ; 5845       ; 0        ; 0        ; 0        ;
+; sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1] ; sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1] ; 5714       ; 0        ; 0        ; 0        ;
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -899,9 +899,9 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +-------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------+----------+----------+----------+
 ; From Clock                                                              ; To Clock                                                                                                                                                                                                 ; RR Paths   ; FR Paths ; RF Paths ; FF Paths ;
 +-------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------+----------+----------+----------+
-; altera_reserved_tck                                                     ; altera_reserved_tck                                                                                                                                                                                      ; 1334       ; 0        ; 0        ; 0        ;
+; altera_reserved_tck                                                     ; altera_reserved_tck                                                                                                                                                                                      ; 1386       ; 0        ; 0        ; 0        ;
 ; altera_reserved_tck                                                     ; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; false path ; 0        ; 0        ; 0        ;
-; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; 75         ; 0        ; 0        ; 0        ;
+; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; 69         ; 0        ; 0        ; 0        ;
 ; clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk ; clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; 10         ; 0        ; 0        ; 0        ;
 ; clk_lvds_i                                                              ; clk_lvds_i                                                                                                                                                                                               ; 14         ; 0        ; 0        ; 0        ;
 ; memrefclk_i                                                             ; clk_lvds_i                                                                                                                                                                                               ; 2          ; 0        ; 0        ; 0        ;
@@ -915,9 +915,9 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +-------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------+----------+----------+----------+
 ; From Clock                                                              ; To Clock                                                                                                                                                                                                 ; RR Paths   ; FR Paths ; RF Paths ; FF Paths ;
 +-------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------+----------+----------+----------+
-; altera_reserved_tck                                                     ; altera_reserved_tck                                                                                                                                                                                      ; 1334       ; 0        ; 0        ; 0        ;
+; altera_reserved_tck                                                     ; altera_reserved_tck                                                                                                                                                                                      ; 1386       ; 0        ; 0        ; 0        ;
 ; altera_reserved_tck                                                     ; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; false path ; 0        ; 0        ; 0        ;
-; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; 75         ; 0        ; 0        ; 0        ;
+; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; 69         ; 0        ; 0        ; 0        ;
 ; clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk ; clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk                                                                                                                                  ; 10         ; 0        ; 0        ; 0        ;
 ; clk_lvds_i                                                              ; clk_lvds_i                                                                                                                                                                                               ; 14         ; 0        ; 0        ; 0        ;
 ; memrefclk_i                                                             ; clk_lvds_i                                                                                                                                                                                               ; 2          ; 0        ; 0        ; 0        ;
@@ -1066,7 +1066,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Standard Edition
-    Info: Processing started: Sun Sep 29 10:22:48 2024
+    Info: Processing started: Sun Sep 29 11:09:41 2024
 Info: Command: quartus_sta hack_the_hill -c hack_the_hill
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -1147,7 +1147,7 @@ Warning (332049): Ignored set_multicycle_path at fpga_bot.sdc(127): Argument <fr
 Warning (332049): Ignored set_multicycle_path at fpga_bot.sdc(128): Argument <from> is not an object ID File: C:/Users/25820/Documents/Quartus/hack_the_hill_restored/fpga_bot.sdc Line: 128
     Info (332050): set_multicycle_path -from {tpg_top:tpg_top|ifs_sdi_flop:ifs_sdi_flop_tpg|NORMAL.NORMAL.sdi_f.fmt[*]} -hold 2   File: C:/Users/25820/Documents/Quartus/hack_the_hill_restored/fpga_bot.sdc Line: 128
 Warning (332060): Node: ultrix_iob:ultrix_iob|tpg_bars:tpg_bars|tx_fvht_d[1] was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Latch video_uut:video_uut|signalModifier:image2Modifier|downCounterSetStart:delayer|counter[9]~13 is being clocked by ultrix_iob:ultrix_iob|tpg_bars:tpg_bars|tx_fvht_d[1]
+    Info (13166): Latch video_uut:video_uut|signalModifier:image2Modifier|downCounterSetStart:delayer|counter[1]~45 is being clocked by ultrix_iob:ultrix_iob|tpg_bars:tpg_bars|tx_fvht_d[1]
 Warning (332060): Node: ultrix_iob:ultrix_iob|tpg_bars:tpg_bars|tx_fvht_d[2] was determined to be a clock but was found without an associated clock assignment.
     Info (13166): Latch video_uut:video_uut|verticalModifier:image1Vmod|downCounterSetStart:delayer|counter[5]~21 is being clocked by ultrix_iob:ultrix_iob|tpg_bars:tpg_bars|tx_fvht_d[2]
 Warning (332060): Node: ultrix_iob:ultrix_iob|sdi12_tx_hac:sdi12_tx0|sdi12_pfd:sdi12_pfd|refclk_div was determined to be a clock but was found without an associated clock assignment.
@@ -1165,42 +1165,42 @@ Info (332097): The following timing edges are non-unate.  The Timing Analyzer wi
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 850mV 85C Model
-Info (332146): Worst-case setup slack is 0.381
+Info (332146): Worst-case setup slack is 0.506
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.381               0.000 clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.484               0.000 sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1] 
-    Info (332119):     3.967               0.000 clk_lvds_i 
-    Info (332119):     4.349               0.000 memrefclk_i 
-    Info (332119):     5.824               0.000 gclk0_148m50_i 
-    Info (332119):     6.705               0.000 clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    13.738               0.000 n/a 
-    Info (332119):    38.149               0.000 altera_reserved_tck 
-Info (332146): Worst-case hold slack is 0.099
+    Info (332119):     0.506               0.000 clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.547               0.000 sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1] 
+    Info (332119):     3.791               0.000 memrefclk_i 
+    Info (332119):     4.008               0.000 clk_lvds_i 
+    Info (332119):     5.814               0.000 gclk0_148m50_i 
+    Info (332119):     6.848               0.000 clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    13.548               0.000 n/a 
+    Info (332119):    37.382               0.000 altera_reserved_tck 
+Info (332146): Worst-case hold slack is 0.067
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.099               0.000 clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.105               0.000 altera_reserved_tck 
-    Info (332119):     0.138               0.000 clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.151               0.000 sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1] 
-    Info (332119):     0.154               0.000 clk_lvds_i 
-    Info (332119):     0.206               0.000 memrefclk_i 
-    Info (332119):     0.283               0.000 gclk0_148m50_i 
-    Info (332119):    15.441               0.000 n/a 
-Info (332146): Worst-case recovery slack is 1.331
+    Info (332119):     0.067               0.000 altera_reserved_tck 
+    Info (332119):     0.113               0.000 clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.148               0.000 clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.153               0.000 clk_lvds_i 
+    Info (332119):     0.155               0.000 sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1] 
+    Info (332119):     0.204               0.000 memrefclk_i 
+    Info (332119):     0.250               0.000 gclk0_148m50_i 
+    Info (332119):    15.639               0.000 n/a 
+Info (332146): Worst-case recovery slack is 1.679
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     1.331               0.000 clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     4.811               0.000 clk_lvds_i 
-    Info (332119):     7.026               0.000 clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    95.391               0.000 altera_reserved_tck 
-Info (332146): Worst-case removal slack is 0.253
+    Info (332119):     1.679               0.000 clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     4.918               0.000 clk_lvds_i 
+    Info (332119):     7.142               0.000 clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    95.522               0.000 altera_reserved_tck 
+Info (332146): Worst-case removal slack is 0.255
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.253               0.000 clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.521               0.000 clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.561               0.000 clk_lvds_i 
-    Info (332119):     0.649               0.000 altera_reserved_tck 
+    Info (332119):     0.255               0.000 clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.264               0.000 altera_reserved_tck 
+    Info (332119):     0.282               0.000 clk_lvds_i 
+    Info (332119):     0.483               0.000 clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info (332146): Worst-case minimum pulse width slack is 0.084
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
@@ -1208,24 +1208,24 @@ Info (332146): Worst-case minimum pulse width slack is 0.084
     Info (332119):     0.333               0.000 clk125_pll|pll_0|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
     Info (332119):     0.833               0.000 clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
     Info (332119):     0.867               0.000 sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1] 
-    Info (332119):     2.860               0.000 clk_lvds_i 
-    Info (332119):     2.876               0.000 gclk0_148m50_i 
+    Info (332119):     2.865               0.000 clk_lvds_i 
+    Info (332119):     2.877               0.000 gclk0_148m50_i 
     Info (332119):     3.367               0.000 egress_refclk_0 
-    Info (332119):     3.454               0.000 clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     3.503               0.000 memrefclk_i 
-    Info (332119):    49.121               0.000 altera_reserved_tck 
-Info (332114): Report Metastability: Found 83 synchronizer chains.
+    Info (332119):     3.455               0.000 clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     3.504               0.000 memrefclk_i 
+    Info (332119):    49.137               0.000 altera_reserved_tck 
+Info (332114): Report Metastability: Found 73 synchronizer chains.
     Info (332114): The design MTBF is not calculated because there are no specified synchronizers in the design.
-    Info (332114): Number of Synchronizer Chains Found: 83
+    Info (332114): Number of Synchronizer Chains Found: 73
     Info (332114): Shortest Synchronizer Chain: 2 Registers
     Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-    Info (332114): Worst Case Available Settling Time: 3.012 ns
+    Info (332114): Worst Case Available Settling Time: 3.222 ns
     Info (332114): 
 Info: Analyzing Slow 850mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Warning (332060): Node: ultrix_iob:ultrix_iob|tpg_bars:tpg_bars|tx_fvht_d[1] was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Latch video_uut:video_uut|signalModifier:image2Modifier|downCounterSetStart:delayer|counter[9]~13 is being clocked by ultrix_iob:ultrix_iob|tpg_bars:tpg_bars|tx_fvht_d[1]
+    Info (13166): Latch video_uut:video_uut|signalModifier:image2Modifier|downCounterSetStart:delayer|counter[1]~45 is being clocked by ultrix_iob:ultrix_iob|tpg_bars:tpg_bars|tx_fvht_d[1]
 Warning (332060): Node: ultrix_iob:ultrix_iob|tpg_bars:tpg_bars|tx_fvht_d[2] was determined to be a clock but was found without an associated clock assignment.
     Info (13166): Latch video_uut:video_uut|verticalModifier:image1Vmod|downCounterSetStart:delayer|counter[5]~21 is being clocked by ultrix_iob:ultrix_iob|tpg_bars:tpg_bars|tx_fvht_d[2]
 Warning (332060): Node: ultrix_iob:ultrix_iob|sdi12_tx_hac:sdi12_tx0|sdi12_pfd:sdi12_pfd|refclk_div was determined to be a clock but was found without an associated clock assignment.
@@ -1241,42 +1241,42 @@ Info (332097): The following timing edges are non-unate.  The Timing Analyzer wi
     Info (332098): From: sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pcs|ch[0].inst_sv_pcs_ch|inst_sv_hssi_10g_tx_pcs|wys|txpmaclk  to: s5_iob_sdi_tx:sdi_tx_phy|altera_xcvr_native_sv:xcvr_native_avgz_0|sv_xcvr_native:gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|sv_pcs:inst_sv_pcs|sv_pcs_ch:ch[0].inst_sv_pcs_ch|sv_hssi_10g_tx_pcs_rbc:inst_sv_hssi_10g_tx_pcs|wys~SYNC_DATA_REG7
     Info (332098): From: sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_pma_ser|pclk[1]  to: s5_iob_sdi_tx:sdi_tx_phy|altera_xcvr_native_sv:xcvr_native_avgz_0|sv_xcvr_native:gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|sv_pma:inst_sv_pma|sv_tx_pma:tx_pma.sv_tx_pma_inst|sv_tx_pma_ch:tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_pma_ser~BURIED_INTCLK0
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
-Info (332146): Worst-case setup slack is 0.532
+Info (332146): Worst-case setup slack is 0.648
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.532               0.000 clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.762               0.000 sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1] 
-    Info (332119):     4.081               0.000 clk_lvds_i 
-    Info (332119):     4.621               0.000 memrefclk_i 
-    Info (332119):     5.860               0.000 gclk0_148m50_i 
-    Info (332119):     6.753               0.000 clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    13.739               0.000 n/a 
-    Info (332119):    38.270               0.000 altera_reserved_tck 
-Info (332146): Worst-case hold slack is 0.118
+    Info (332119):     0.648               0.000 clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.784               0.000 sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1] 
+    Info (332119):     4.100               0.000 clk_lvds_i 
+    Info (332119):     4.155               0.000 memrefclk_i 
+    Info (332119):     5.848               0.000 gclk0_148m50_i 
+    Info (332119):     6.903               0.000 clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    13.549               0.000 n/a 
+    Info (332119):    37.587               0.000 altera_reserved_tck 
+Info (332146): Worst-case hold slack is 0.085
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.118               0.000 altera_reserved_tck 
-    Info (332119):     0.162               0.000 clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.169               0.000 sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1] 
-    Info (332119):     0.216               0.000 clk_lvds_i 
+    Info (332119):     0.085               0.000 altera_reserved_tck 
+    Info (332119):     0.155               0.000 clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.171               0.000 sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1] 
     Info (332119):     0.218               0.000 clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.262               0.000 memrefclk_i 
-    Info (332119):     0.386               0.000 gclk0_148m50_i 
-    Info (332119):    15.475               0.000 n/a 
-Info (332146): Worst-case recovery slack is 1.503
+    Info (332119):     0.233               0.000 clk_lvds_i 
+    Info (332119):     0.261               0.000 memrefclk_i 
+    Info (332119):     0.319               0.000 gclk0_148m50_i 
+    Info (332119):    15.664               0.000 n/a 
+Info (332146): Worst-case recovery slack is 1.805
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     1.503               0.000 clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     4.919               0.000 clk_lvds_i 
-    Info (332119):     7.184               0.000 clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    95.603               0.000 altera_reserved_tck 
-Info (332146): Worst-case removal slack is 0.310
+    Info (332119):     1.805               0.000 clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     5.040               0.000 clk_lvds_i 
+    Info (332119):     7.269               0.000 clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    95.799               0.000 altera_reserved_tck 
+Info (332146): Worst-case removal slack is 0.305
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.310               0.000 clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.603               0.000 clk_lvds_i 
-    Info (332119):     0.611               0.000 clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.653               0.000 altera_reserved_tck 
+    Info (332119):     0.305               0.000 clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.330               0.000 altera_reserved_tck 
+    Info (332119):     0.332               0.000 clk_lvds_i 
+    Info (332119):     0.528               0.000 clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info (332146): Worst-case minimum pulse width slack is 0.084
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
@@ -1284,22 +1284,22 @@ Info (332146): Worst-case minimum pulse width slack is 0.084
     Info (332119):     0.333               0.000 clk125_pll|pll_0|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
     Info (332119):     0.833               0.000 clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
     Info (332119):     0.844               0.000 sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1] 
-    Info (332119):     2.862               0.000 clk_lvds_i 
-    Info (332119):     2.873               0.000 gclk0_148m50_i 
+    Info (332119):     2.864               0.000 clk_lvds_i 
+    Info (332119):     2.874               0.000 gclk0_148m50_i 
     Info (332119):     3.367               0.000 egress_refclk_0 
     Info (332119):     3.448               0.000 clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     3.500               0.000 memrefclk_i 
-    Info (332119):    49.287               0.000 altera_reserved_tck 
-Info (332114): Report Metastability: Found 83 synchronizer chains.
+    Info (332119):     3.502               0.000 memrefclk_i 
+    Info (332119):    49.293               0.000 altera_reserved_tck 
+Info (332114): Report Metastability: Found 73 synchronizer chains.
     Info (332114): The design MTBF is not calculated because there are no specified synchronizers in the design.
-    Info (332114): Number of Synchronizer Chains Found: 83
+    Info (332114): Number of Synchronizer Chains Found: 73
     Info (332114): Shortest Synchronizer Chain: 2 Registers
     Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-    Info (332114): Worst Case Available Settling Time: 3.300 ns
+    Info (332114): Worst Case Available Settling Time: 3.496 ns
     Info (332114): 
 Info: Analyzing Fast 850mV 0C Model
 Warning (332060): Node: ultrix_iob:ultrix_iob|tpg_bars:tpg_bars|tx_fvht_d[1] was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Latch video_uut:video_uut|signalModifier:image2Modifier|downCounterSetStart:delayer|counter[9]~13 is being clocked by ultrix_iob:ultrix_iob|tpg_bars:tpg_bars|tx_fvht_d[1]
+    Info (13166): Latch video_uut:video_uut|signalModifier:image2Modifier|downCounterSetStart:delayer|counter[1]~45 is being clocked by ultrix_iob:ultrix_iob|tpg_bars:tpg_bars|tx_fvht_d[1]
 Warning (332060): Node: ultrix_iob:ultrix_iob|tpg_bars:tpg_bars|tx_fvht_d[2] was determined to be a clock but was found without an associated clock assignment.
     Info (13166): Latch video_uut:video_uut|verticalModifier:image1Vmod|downCounterSetStart:delayer|counter[5]~21 is being clocked by ultrix_iob:ultrix_iob|tpg_bars:tpg_bars|tx_fvht_d[2]
 Warning (332060): Node: ultrix_iob:ultrix_iob|sdi12_tx_hac:sdi12_tx0|sdi12_pfd:sdi12_pfd|refclk_div was determined to be a clock but was found without an associated clock assignment.
@@ -1315,67 +1315,67 @@ Info (332097): The following timing edges are non-unate.  The Timing Analyzer wi
     Info (332098): From: sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pcs|ch[0].inst_sv_pcs_ch|inst_sv_hssi_10g_tx_pcs|wys|txpmaclk  to: s5_iob_sdi_tx:sdi_tx_phy|altera_xcvr_native_sv:xcvr_native_avgz_0|sv_xcvr_native:gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|sv_pcs:inst_sv_pcs|sv_pcs_ch:ch[0].inst_sv_pcs_ch|sv_hssi_10g_tx_pcs_rbc:inst_sv_hssi_10g_tx_pcs|wys~SYNC_DATA_REG7
     Info (332098): From: sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_pma_ser|pclk[1]  to: s5_iob_sdi_tx:sdi_tx_phy|altera_xcvr_native_sv:xcvr_native_avgz_0|sv_xcvr_native:gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|sv_pma:inst_sv_pma|sv_tx_pma:tx_pma.sv_tx_pma_inst|sv_tx_pma_ch:tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_pma_ser~BURIED_INTCLK0
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
-Info (332146): Worst-case setup slack is 1.718
+Info (332146): Worst-case setup slack is 1.749
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     1.718               0.000 clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     1.867               0.000 sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1] 
-    Info (332119):     5.347               0.000 clk_lvds_i 
-    Info (332119):     5.939               0.000 memrefclk_i 
-    Info (332119):     6.372               0.000 gclk0_148m50_i 
-    Info (332119):     7.499               0.000 clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    15.972               0.000 n/a 
-    Info (332119):    40.828               0.000 altera_reserved_tck 
-Info (332146): Worst-case hold slack is 0.033
+    Info (332119):     1.749               0.000 clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     1.862               0.000 sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1] 
+    Info (332119):     5.499               0.000 clk_lvds_i 
+    Info (332119):     5.664               0.000 memrefclk_i 
+    Info (332119):     6.374               0.000 gclk0_148m50_i 
+    Info (332119):     7.569               0.000 clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    15.847               0.000 n/a 
+    Info (332119):    40.388               0.000 altera_reserved_tck 
+Info (332146): Worst-case hold slack is 0.008
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.033               0.000 altera_reserved_tck 
-    Info (332119):     0.079               0.000 sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1] 
-    Info (332119):     0.121               0.000 clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.123               0.000 clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.008               0.000 altera_reserved_tck 
+    Info (332119):     0.077               0.000 sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1] 
+    Info (332119):     0.115               0.000 clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
     Info (332119):     0.125               0.000 clk_lvds_i 
     Info (332119):     0.132               0.000 memrefclk_i 
-    Info (332119):     0.192               0.000 gclk0_148m50_i 
-    Info (332119):    13.552               0.000 n/a 
-Info (332146): Worst-case recovery slack is 2.208
+    Info (332119):     0.142               0.000 clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.193               0.000 gclk0_148m50_i 
+    Info (332119):    13.649               0.000 n/a 
+Info (332146): Worst-case recovery slack is 2.417
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     2.208               0.000 clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     5.843               0.000 clk_lvds_i 
-    Info (332119):     7.624               0.000 clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    97.190               0.000 altera_reserved_tck 
-Info (332146): Worst-case removal slack is 0.183
+    Info (332119):     2.417               0.000 clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     5.991               0.000 clk_lvds_i 
+    Info (332119):     7.625               0.000 clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    97.249               0.000 altera_reserved_tck 
+Info (332146): Worst-case removal slack is 0.186
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.183               0.000 clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.339               0.000 altera_reserved_tck 
-    Info (332119):     0.364               0.000 clk_lvds_i 
-    Info (332119):     0.369               0.000 clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.186               0.000 clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.202               0.000 clk_lvds_i 
+    Info (332119):     0.210               0.000 altera_reserved_tck 
+    Info (332119):     0.326               0.000 clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info (332146): Worst-case minimum pulse width slack is 0.084
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):     0.084               0.000 sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_plls.gen_tx_plls.tx_plls|pll[0].pll.atx_pll.tx_pll|clk010g 
     Info (332119):     0.333               0.000 clk125_pll|pll_0|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
-    Info (332119):     0.904               0.000 sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1] 
+    Info (332119):     0.905               0.000 sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1] 
     Info (332119):     0.935               0.000 clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     3.092               0.000 clk_lvds_i 
+    Info (332119):     3.097               0.000 clk_lvds_i 
     Info (332119):     3.100               0.000 gclk0_148m50_i 
     Info (332119):     3.367               0.000 egress_refclk_0 
-    Info (332119):     3.728               0.000 memrefclk_i 
-    Info (332119):     3.741               0.000 clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    48.935               0.000 altera_reserved_tck 
-Info (332114): Report Metastability: Found 83 synchronizer chains.
+    Info (332119):     3.725               0.000 memrefclk_i 
+    Info (332119):     3.740               0.000 clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    48.955               0.000 altera_reserved_tck 
+Info (332114): Report Metastability: Found 73 synchronizer chains.
     Info (332114): The design MTBF is not calculated because there are no specified synchronizers in the design.
-    Info (332114): Number of Synchronizer Chains Found: 83
+    Info (332114): Number of Synchronizer Chains Found: 73
     Info (332114): Shortest Synchronizer Chain: 2 Registers
     Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-    Info (332114): Worst Case Available Settling Time: 4.662 ns
+    Info (332114): Worst Case Available Settling Time: 4.895 ns
     Info (332114): 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 29 warnings
-    Info: Peak virtual memory: 5908 megabytes
-    Info: Processing ended: Sun Sep 29 10:22:54 2024
+    Info: Peak virtual memory: 5923 megabytes
+    Info: Processing ended: Sun Sep 29 11:09:47 2024
     Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:06
 

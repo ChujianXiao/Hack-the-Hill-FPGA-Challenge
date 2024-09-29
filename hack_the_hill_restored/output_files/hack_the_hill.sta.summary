@@ -3,99 +3,99 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 850mV 85C Model Setup 'clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 0.381
+Slack : 0.506
 TNS   : 0.000
 
 Type  : Slow 850mV 85C Model Setup 'sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1]'
-Slack : 0.484
-TNS   : 0.000
-
-Type  : Slow 850mV 85C Model Setup 'clk_lvds_i'
-Slack : 3.967
+Slack : 0.547
 TNS   : 0.000
 
 Type  : Slow 850mV 85C Model Setup 'memrefclk_i'
-Slack : 4.349
+Slack : 3.791
+TNS   : 0.000
+
+Type  : Slow 850mV 85C Model Setup 'clk_lvds_i'
+Slack : 4.008
 TNS   : 0.000
 
 Type  : Slow 850mV 85C Model Setup 'gclk0_148m50_i'
-Slack : 5.824
+Slack : 5.814
 TNS   : 0.000
 
 Type  : Slow 850mV 85C Model Setup 'clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 6.705
+Slack : 6.848
 TNS   : 0.000
 
 Type  : Slow 850mV 85C Model Setup 'n/a'
-Slack : 13.738
+Slack : 13.548
 TNS   : 0.000
 
 Type  : Slow 850mV 85C Model Setup 'altera_reserved_tck'
-Slack : 38.149
-TNS   : 0.000
-
-Type  : Slow 850mV 85C Model Hold 'clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 0.099
+Slack : 37.382
 TNS   : 0.000
 
 Type  : Slow 850mV 85C Model Hold 'altera_reserved_tck'
-Slack : 0.105
+Slack : 0.067
+TNS   : 0.000
+
+Type  : Slow 850mV 85C Model Hold 'clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.113
 TNS   : 0.000
 
 Type  : Slow 850mV 85C Model Hold 'clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 0.138
-TNS   : 0.000
-
-Type  : Slow 850mV 85C Model Hold 'sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1]'
-Slack : 0.151
+Slack : 0.148
 TNS   : 0.000
 
 Type  : Slow 850mV 85C Model Hold 'clk_lvds_i'
-Slack : 0.154
+Slack : 0.153
+TNS   : 0.000
+
+Type  : Slow 850mV 85C Model Hold 'sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1]'
+Slack : 0.155
 TNS   : 0.000
 
 Type  : Slow 850mV 85C Model Hold 'memrefclk_i'
-Slack : 0.206
+Slack : 0.204
 TNS   : 0.000
 
 Type  : Slow 850mV 85C Model Hold 'gclk0_148m50_i'
-Slack : 0.283
+Slack : 0.250
 TNS   : 0.000
 
 Type  : Slow 850mV 85C Model Hold 'n/a'
-Slack : 15.441
+Slack : 15.639
 TNS   : 0.000
 
 Type  : Slow 850mV 85C Model Recovery 'clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 1.331
+Slack : 1.679
 TNS   : 0.000
 
 Type  : Slow 850mV 85C Model Recovery 'clk_lvds_i'
-Slack : 4.811
+Slack : 4.918
 TNS   : 0.000
 
 Type  : Slow 850mV 85C Model Recovery 'clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 7.026
+Slack : 7.142
 TNS   : 0.000
 
 Type  : Slow 850mV 85C Model Recovery 'altera_reserved_tck'
-Slack : 95.391
+Slack : 95.522
 TNS   : 0.000
 
 Type  : Slow 850mV 85C Model Removal 'clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 0.253
-TNS   : 0.000
-
-Type  : Slow 850mV 85C Model Removal 'clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 0.521
-TNS   : 0.000
-
-Type  : Slow 850mV 85C Model Removal 'clk_lvds_i'
-Slack : 0.561
+Slack : 0.255
 TNS   : 0.000
 
 Type  : Slow 850mV 85C Model Removal 'altera_reserved_tck'
-Slack : 0.649
+Slack : 0.264
+TNS   : 0.000
+
+Type  : Slow 850mV 85C Model Removal 'clk_lvds_i'
+Slack : 0.282
+TNS   : 0.000
+
+Type  : Slow 850mV 85C Model Removal 'clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.483
 TNS   : 0.000
 
 Type  : Slow 850mV 85C Model Minimum Pulse Width 'sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_plls.gen_tx_plls.tx_plls|pll[0].pll.atx_pll.tx_pll|clk010g'
@@ -115,11 +115,11 @@ Slack : 0.867
 TNS   : 0.000
 
 Type  : Slow 850mV 85C Model Minimum Pulse Width 'clk_lvds_i'
-Slack : 2.860
+Slack : 2.865
 TNS   : 0.000
 
 Type  : Slow 850mV 85C Model Minimum Pulse Width 'gclk0_148m50_i'
-Slack : 2.876
+Slack : 2.877
 TNS   : 0.000
 
 Type  : Slow 850mV 85C Model Minimum Pulse Width 'egress_refclk_0'
@@ -127,111 +127,111 @@ Slack : 3.367
 TNS   : 0.000
 
 Type  : Slow 850mV 85C Model Minimum Pulse Width 'clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 3.454
+Slack : 3.455
 TNS   : 0.000
 
 Type  : Slow 850mV 85C Model Minimum Pulse Width 'memrefclk_i'
-Slack : 3.503
+Slack : 3.504
 TNS   : 0.000
 
 Type  : Slow 850mV 85C Model Minimum Pulse Width 'altera_reserved_tck'
-Slack : 49.121
+Slack : 49.137
 TNS   : 0.000
 
 Type  : Slow 850mV 0C Model Setup 'clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 0.532
+Slack : 0.648
 TNS   : 0.000
 
 Type  : Slow 850mV 0C Model Setup 'sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1]'
-Slack : 0.762
+Slack : 0.784
 TNS   : 0.000
 
 Type  : Slow 850mV 0C Model Setup 'clk_lvds_i'
-Slack : 4.081
+Slack : 4.100
 TNS   : 0.000
 
 Type  : Slow 850mV 0C Model Setup 'memrefclk_i'
-Slack : 4.621
+Slack : 4.155
 TNS   : 0.000
 
 Type  : Slow 850mV 0C Model Setup 'gclk0_148m50_i'
-Slack : 5.860
+Slack : 5.848
 TNS   : 0.000
 
 Type  : Slow 850mV 0C Model Setup 'clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 6.753
+Slack : 6.903
 TNS   : 0.000
 
 Type  : Slow 850mV 0C Model Setup 'n/a'
-Slack : 13.739
+Slack : 13.549
 TNS   : 0.000
 
 Type  : Slow 850mV 0C Model Setup 'altera_reserved_tck'
-Slack : 38.270
+Slack : 37.587
 TNS   : 0.000
 
 Type  : Slow 850mV 0C Model Hold 'altera_reserved_tck'
-Slack : 0.118
+Slack : 0.085
 TNS   : 0.000
 
 Type  : Slow 850mV 0C Model Hold 'clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 0.162
+Slack : 0.155
 TNS   : 0.000
 
 Type  : Slow 850mV 0C Model Hold 'sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1]'
-Slack : 0.169
-TNS   : 0.000
-
-Type  : Slow 850mV 0C Model Hold 'clk_lvds_i'
-Slack : 0.216
+Slack : 0.171
 TNS   : 0.000
 
 Type  : Slow 850mV 0C Model Hold 'clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk'
 Slack : 0.218
 TNS   : 0.000
 
+Type  : Slow 850mV 0C Model Hold 'clk_lvds_i'
+Slack : 0.233
+TNS   : 0.000
+
 Type  : Slow 850mV 0C Model Hold 'memrefclk_i'
-Slack : 0.262
+Slack : 0.261
 TNS   : 0.000
 
 Type  : Slow 850mV 0C Model Hold 'gclk0_148m50_i'
-Slack : 0.386
+Slack : 0.319
 TNS   : 0.000
 
 Type  : Slow 850mV 0C Model Hold 'n/a'
-Slack : 15.475
+Slack : 15.664
 TNS   : 0.000
 
 Type  : Slow 850mV 0C Model Recovery 'clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 1.503
+Slack : 1.805
 TNS   : 0.000
 
 Type  : Slow 850mV 0C Model Recovery 'clk_lvds_i'
-Slack : 4.919
+Slack : 5.040
 TNS   : 0.000
 
 Type  : Slow 850mV 0C Model Recovery 'clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 7.184
+Slack : 7.269
 TNS   : 0.000
 
 Type  : Slow 850mV 0C Model Recovery 'altera_reserved_tck'
-Slack : 95.603
+Slack : 95.799
 TNS   : 0.000
 
 Type  : Slow 850mV 0C Model Removal 'clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 0.310
-TNS   : 0.000
-
-Type  : Slow 850mV 0C Model Removal 'clk_lvds_i'
-Slack : 0.603
-TNS   : 0.000
-
-Type  : Slow 850mV 0C Model Removal 'clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 0.611
+Slack : 0.305
 TNS   : 0.000
 
 Type  : Slow 850mV 0C Model Removal 'altera_reserved_tck'
-Slack : 0.653
+Slack : 0.330
+TNS   : 0.000
+
+Type  : Slow 850mV 0C Model Removal 'clk_lvds_i'
+Slack : 0.332
+TNS   : 0.000
+
+Type  : Slow 850mV 0C Model Removal 'clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.528
 TNS   : 0.000
 
 Type  : Slow 850mV 0C Model Minimum Pulse Width 'sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_plls.gen_tx_plls.tx_plls|pll[0].pll.atx_pll.tx_pll|clk010g'
@@ -251,11 +251,11 @@ Slack : 0.844
 TNS   : 0.000
 
 Type  : Slow 850mV 0C Model Minimum Pulse Width 'clk_lvds_i'
-Slack : 2.862
+Slack : 2.864
 TNS   : 0.000
 
 Type  : Slow 850mV 0C Model Minimum Pulse Width 'gclk0_148m50_i'
-Slack : 2.873
+Slack : 2.874
 TNS   : 0.000
 
 Type  : Slow 850mV 0C Model Minimum Pulse Width 'egress_refclk_0'
@@ -267,59 +267,55 @@ Slack : 3.448
 TNS   : 0.000
 
 Type  : Slow 850mV 0C Model Minimum Pulse Width 'memrefclk_i'
-Slack : 3.500
+Slack : 3.502
 TNS   : 0.000
 
 Type  : Slow 850mV 0C Model Minimum Pulse Width 'altera_reserved_tck'
-Slack : 49.287
+Slack : 49.293
 TNS   : 0.000
 
 Type  : Fast 850mV 0C Model Setup 'clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 1.718
+Slack : 1.749
 TNS   : 0.000
 
 Type  : Fast 850mV 0C Model Setup 'sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1]'
-Slack : 1.867
+Slack : 1.862
 TNS   : 0.000
 
 Type  : Fast 850mV 0C Model Setup 'clk_lvds_i'
-Slack : 5.347
+Slack : 5.499
 TNS   : 0.000
 
 Type  : Fast 850mV 0C Model Setup 'memrefclk_i'
-Slack : 5.939
+Slack : 5.664
 TNS   : 0.000
 
 Type  : Fast 850mV 0C Model Setup 'gclk0_148m50_i'
-Slack : 6.372
+Slack : 6.374
 TNS   : 0.000
 
 Type  : Fast 850mV 0C Model Setup 'clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 7.499
+Slack : 7.569
 TNS   : 0.000
 
 Type  : Fast 850mV 0C Model Setup 'n/a'
-Slack : 15.972
+Slack : 15.847
 TNS   : 0.000
 
 Type  : Fast 850mV 0C Model Setup 'altera_reserved_tck'
-Slack : 40.828
+Slack : 40.388
 TNS   : 0.000
 
 Type  : Fast 850mV 0C Model Hold 'altera_reserved_tck'
-Slack : 0.033
+Slack : 0.008
 TNS   : 0.000
 
 Type  : Fast 850mV 0C Model Hold 'sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1]'
-Slack : 0.079
+Slack : 0.077
 TNS   : 0.000
 
 Type  : Fast 850mV 0C Model Hold 'clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 0.121
-TNS   : 0.000
-
-Type  : Fast 850mV 0C Model Hold 'clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 0.123
+Slack : 0.115
 TNS   : 0.000
 
 Type  : Fast 850mV 0C Model Hold 'clk_lvds_i'
@@ -330,44 +326,48 @@ Type  : Fast 850mV 0C Model Hold 'memrefclk_i'
 Slack : 0.132
 TNS   : 0.000
 
+Type  : Fast 850mV 0C Model Hold 'clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.142
+TNS   : 0.000
+
 Type  : Fast 850mV 0C Model Hold 'gclk0_148m50_i'
-Slack : 0.192
+Slack : 0.193
 TNS   : 0.000
 
 Type  : Fast 850mV 0C Model Hold 'n/a'
-Slack : 13.552
+Slack : 13.649
 TNS   : 0.000
 
 Type  : Fast 850mV 0C Model Recovery 'clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 2.208
+Slack : 2.417
 TNS   : 0.000
 
 Type  : Fast 850mV 0C Model Recovery 'clk_lvds_i'
-Slack : 5.843
+Slack : 5.991
 TNS   : 0.000
 
 Type  : Fast 850mV 0C Model Recovery 'clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 7.624
+Slack : 7.625
 TNS   : 0.000
 
 Type  : Fast 850mV 0C Model Recovery 'altera_reserved_tck'
-Slack : 97.190
+Slack : 97.249
 TNS   : 0.000
 
 Type  : Fast 850mV 0C Model Removal 'clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 0.183
-TNS   : 0.000
-
-Type  : Fast 850mV 0C Model Removal 'altera_reserved_tck'
-Slack : 0.339
+Slack : 0.186
 TNS   : 0.000
 
 Type  : Fast 850mV 0C Model Removal 'clk_lvds_i'
-Slack : 0.364
+Slack : 0.202
+TNS   : 0.000
+
+Type  : Fast 850mV 0C Model Removal 'altera_reserved_tck'
+Slack : 0.210
 TNS   : 0.000
 
 Type  : Fast 850mV 0C Model Removal 'clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 0.369
+Slack : 0.326
 TNS   : 0.000
 
 Type  : Fast 850mV 0C Model Minimum Pulse Width 'sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_plls.gen_tx_plls.tx_plls|pll[0].pll.atx_pll.tx_pll|clk010g'
@@ -379,7 +379,7 @@ Slack : 0.333
 TNS   : 0.000
 
 Type  : Fast 850mV 0C Model Minimum Pulse Width 'sdi_tx_phy|xcvr_native_avgz_0|gen_native_inst.xcvr_native_insts[0].gen_bonded_group_native.xcvr_native_inst|inst_sv_pma|tx_pma.sv_tx_pma_inst|tx_pma_insts[0].sv_tx_pma_ch_inst|tx_pma_ch.tx_cgb|pclk[1]'
-Slack : 0.904
+Slack : 0.905
 TNS   : 0.000
 
 Type  : Fast 850mV 0C Model Minimum Pulse Width 'clk125_pll|pll_0|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
@@ -387,7 +387,7 @@ Slack : 0.935
 TNS   : 0.000
 
 Type  : Fast 850mV 0C Model Minimum Pulse Width 'clk_lvds_i'
-Slack : 3.092
+Slack : 3.097
 TNS   : 0.000
 
 Type  : Fast 850mV 0C Model Minimum Pulse Width 'gclk0_148m50_i'
@@ -399,15 +399,15 @@ Slack : 3.367
 TNS   : 0.000
 
 Type  : Fast 850mV 0C Model Minimum Pulse Width 'memrefclk_i'
-Slack : 3.728
+Slack : 3.725
 TNS   : 0.000
 
 Type  : Fast 850mV 0C Model Minimum Pulse Width 'clk125_pll|pll_0|altera_pll_i|general[2].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 3.741
+Slack : 3.740
 TNS   : 0.000
 
 Type  : Fast 850mV 0C Model Minimum Pulse Width 'altera_reserved_tck'
-Slack : 48.935
+Slack : 48.955
 TNS   : 0.000
 
 ------------------------------------------------------------

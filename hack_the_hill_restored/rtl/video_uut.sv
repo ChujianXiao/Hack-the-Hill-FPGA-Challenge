@@ -49,12 +49,14 @@ signalModifier image2Modifier(
 );
 
 verticalModifier image1Vmod(
+	.i_clk(clk_i),
 	.i_vdat_colour(vdat_bars_inter),
 	.i_fvht(fvht_i),
    .o_updated_colour(vdat_bars_inter2)
 );
 
 verticalModifier image2Vmod(
+   .i_clk(clk_i),
 	.i_vdat_colour(vdat_colour_inter),
 	.i_fvht(fvht_i),
    .o_updated_colour(vdat_colour_inter2)

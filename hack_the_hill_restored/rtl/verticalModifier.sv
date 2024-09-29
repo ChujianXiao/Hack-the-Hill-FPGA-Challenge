@@ -49,11 +49,6 @@ module verticalModifier(
 	 assign o_updated_colour[19:10] = i_vdat_colour[19:10];
 	 
 	 logic up;
-	 
-	 initial begin
-	  up <= 1'b0;
-	  incrementer <= 11'b00000000010;
-	 end
 	  
 	 logic vertical_blank_last;
 		 always_ff @(posedge i_clk) begin
@@ -68,7 +63,7 @@ module verticalModifier(
 				//incrementer <= 'b0;
 				up <= 1;
 				incrementer <= incrementer - 1;
-			end else if(incrementer == 1) begin
+			end else if(incrementer == 0) begin
 				up <= 0;
 				incrementer <= incrementer + 1;
 			end else begin
@@ -77,7 +72,7 @@ module verticalModifier(
 				end else
 					incrementer <= incrementer - 1;
 			end
-		//end
+		end
 	 end
     
 endmodule
